@@ -11,6 +11,12 @@ dependencies {
     testImplementation 'junit:junit:4.13.1'
 }
 
+jar {
+    manifest {
+        attributes 'Main-Class': 'org.douggschwind.games.chess.Chess'
+    }
+}
+
 group = 'org.douggschwind'
 version = '1.0-SNAPSHOT'
 description = 'Games'
